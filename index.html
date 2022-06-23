@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>landing page</title>
-    <link rel="stylesheet" text="text/css" href="styles.css" />
+    <link rel="stylesheet" text="text/css" media="screen and (max-width:700px)" href="mobile.css">
+    <link rel="stylesheet" text="text/css" media="screen and (min-width:701px)" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +25,7 @@
     <main>
       <div class="overlay">
         <header>
-          <img src="logo.svg" alt="logo" />
+          <img src="logo.svg" alt="logo" id="logo" />
           <button>Try it free</button>
         </header>
 
@@ -39,10 +40,9 @@
             <button><small>Get started for free</small></button>
           </div>
           <div class="second-content">
-            <img
+            <img class="first-img1"
               src="illustration-mockups.svg"
               alt="poster"
-              style="width: 650px"
             />
           </div>
         </div>
@@ -60,10 +60,9 @@
           </p>
         </div>
         <div class="grow2">
-          <img
+          <img class="first-img"
             src="illustration-grow-together.svg"
             alt="poster"
-            style="width: 400px"
           />
         </div>
       </div>
@@ -71,10 +70,9 @@
       <!--flowing conversation-->
       <div class="second-row">
         <div class="flowing1">
-          <img
+          <img class="first-img"
             src="illustration-flowing-conversation.svg"
             alt="poster"
-            style="width: 400px"
           />
         </div>
         <div class="flowing2">
@@ -100,10 +98,9 @@
           </p>
         </div>
         <div class="users2">
-          <img
+          <img class="first-img"
             src="illustration-your-users.svg"
             alt="poster"
-            style="width: 400px"
           />
         </div>
       </div>
@@ -139,7 +136,7 @@
           </div>
           <div class="icon-text">
             <div class="img"><img src="icon-email.svg" alt="Email" /></div>
-            <div class="first"><p>example@huddle.com</p></div>
+            <div class="first first2"><p>example@huddle.com</p></div>
           </div>
         </div>
 
@@ -170,7 +167,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>© Copyright 2022 doubleD. All rights reserved.</p>
+        <p>© <small>Copyright 2022 doubleD. All rights reserved.</small></p>
       </div>
     </footer>
   </body>
